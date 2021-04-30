@@ -1,2 +1,2 @@
-# backup-front
-this is the backup, for older version of syswa gestion
+# kkprettynails-2.0.0
+Fase 2 de kkprettynails
