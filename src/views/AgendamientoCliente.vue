@@ -529,7 +529,7 @@
         },
         data(){
             return {
-                active: true,
+                active: false,
                 socket: io(endPoint.endpointTarget),
                 configDate: {
                     inline:false,
