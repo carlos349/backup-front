@@ -16,7 +16,7 @@
                                 Sin horarios en la agenda.
                             </h1>
                         </div>
-                        <div class="row">
+                        <div v-else class="row">
                             <div class="showDevice col-md-12 row">
                                 <div style="width:auto;" class="mx-auto" >
                                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
