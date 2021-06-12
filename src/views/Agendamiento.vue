@@ -130,13 +130,13 @@
                                 <h4 class="text-center text-uppercase">Fechas disponibles</h4>
                                 <base-input addon-left-icon="ni ni-calendar-grid-58">
                                     <flat-picker slot-scope="{focus, blur}"
-                                                @on-change="openCalendar(),load1 = true"
-                                                @on-open="focus"
-                                                @on-close="blur"
-                                                :config="configDatePicker"
-                                                class="form-control datepicker"
-                                                v-model="registerDae.date"
-                                                placeholder="Seleccione una fecha">
+                                        @on-change="openCalendar(),load1 = true"
+                                        @on-open="focus"
+                                        @on-close="blur"
+                                        :config="configDatePicker"
+                                        class="form-control datepicker"
+                                        v-model="registerDae.date"
+                                        placeholder="Seleccione una fecha">
                                     </flat-picker>
                                 </base-input>
                                 
@@ -1319,11 +1319,6 @@
                 function(date) {
                     // return true to disable
                     return (date.getDay() === 0 );
-
-                },
-                function(date) {
-                    // return true to disable
-                    return (date.getDay() === 6);
 
                 },
                 {

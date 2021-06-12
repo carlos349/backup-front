@@ -642,11 +642,15 @@
             this.getServices()
             this.getCategories()
             this.device()
+            //  this.$swal({ 
+            //     icon: 'info',
+            //     title: 'Mensaje de información',
+            //     showConfirmButton: true
+            // })
         },
         methods: {
             handleFileUpload(){
                 this.file = this.$refs.file.files[0]
-                
             },
             location(){
                 this.modals = {
