@@ -11,12 +11,12 @@
                     <h2 v-if="validWizard" slot="title">Datos de agendamiento </h2>
                     <h2 v-else slot="title" class="text-danger">¡Debe completar los datos!</h2>
                     <tab-content title="Servicios" icon="fa fa-layer-group" :before-change="validateFirstStep" >
-                        <div v-if="active">
+                        <!-- <div v-if="active">
                             <h1 class="text-center">
                                 Sin horarios en la agenda.
                             </h1>
-                        </div>
-                        <div v-else class="row">
+                        </div> -->
+                        <div class="row">
                             <div class="showDevice col-md-12 row">
                                 <div style="width:auto;" class="mx-auto" >
                                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -544,11 +544,6 @@
                             return (date.getDay() === 0 );
 
                         },
-                        function(date) {
-                            // return true to disable
-                            return (date.getDay() === 6);
-
-                        },
                         {
                             from: "01-01-2021",
                             to: "06-01-2021"
@@ -642,11 +637,11 @@
             this.getServices()
             this.getCategories()
             this.device()
-            //  this.$swal({ 
-            //     icon: 'info',
-            //     title: 'Mensaje de información',
-            //     showConfirmButton: true
-            // })
+             this.$swal({ 
+                icon: 'info',
+                html: `<p style='text-align:justify'><b>ATENCIÓN:</b> por motivo de CUARENTENA en toda la Región Metropolitana no podremos atenderle directamente en el local. <b>Habilitamos otra dirección para atenderles ubicada en Carlos Valdovinos 44, San Joaquín.</b> Si deseas seguir agendando por favor dale al botón de siguiente para continuar.</p>`,
+                showConfirmButton: true
+            })
         },
         methods: {
             handleFileUpload(){
