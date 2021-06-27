@@ -637,11 +637,11 @@
             this.getServices()
             this.getCategories()
             this.device()
-             this.$swal({ 
-                icon: 'info',
-                html: `<p style='text-align:justify'><b>ATENCIÓN:</b> por motivo de CUARENTENA en toda la Región Metropolitana no podremos atenderle directamente en el local. <b>Habilitamos otra dirección para atenderles ubicada en Carlos Valdovinos 44, San Joaquín.</b> Si deseas seguir agendando por favor dale al botón de siguiente para continuar.</p>`,
-                showConfirmButton: true
-            })
+            //  this.$swal({ 
+            //     icon: 'info',
+            //     html: `<p style='text-align:justify'><b>ATENCIÓN:</b> por motivo de CUARENTENA en toda la Región Metropolitana no podremos atenderle directamente en el local. <b>Habilitamos otra dirección para atenderles ubicada en Carlos Valdovinos 44, San Joaquín.</b> Si deseas seguir agendando por favor dale al botón de siguiente para continuar.</p>`,
+            //     showConfirmButton: true
+            // })
         },
         methods: {
             handleFileUpload(){
