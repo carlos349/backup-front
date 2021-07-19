@@ -1337,11 +1337,6 @@
                     // return true to disable
                     return (date.getDay() === 0 );
 
-                },
-                function(date) {
-                    // return true to disable
-                    return (date.getDay() === 6);
-
                 }
             ] 
         },
