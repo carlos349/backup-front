@@ -1321,6 +1321,11 @@
                     return (date.getDay() === 0 );
 
                 },
+                function(date) {
+                    // return true to disable
+                    return (date.getDay() === 1 );
+
+                },
                 {
                     from: "01-01-2021",
                     to: "06-01-2021"
@@ -1336,6 +1341,11 @@
                 function(date) {
                     // return true to disable
                     return (date.getDay() === 0 );
+
+                },
+                function(date) {
+                    // return true to disable
+                    return (date.getDay() === 1 );
 
                 }
             ] 
